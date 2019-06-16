@@ -22,6 +22,6 @@
   "Return a random string of hackerish encouragement."
   (my/random-elt *words-of-encouragement*))
 
-(defcommand stump-encouragement () ()
+(defcommand encouragement () ()
   "Print a random string of hackerish encouragement."
   (message "~a" (random-encouragement)))
