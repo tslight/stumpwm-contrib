@@ -79,6 +79,10 @@ to the world!
 - [[./util/app-menu/README.org][app-menu]] :: A simple application menu for launching shell commands
 - [[./util/globalwindows/README.org][globalwindows]] :: Manipulate all windows in the current X session
 - [[./util/notify/README.org][notify]] :: DBus-based notification server part
+<<<<<<< HEAD
+=======
+- [[./util/volume/README.org][volume]] :: Display volume changes as a message.
+>>>>>>> volume
 - [[./util/windowtags/README.org][windowtags]] :: Add metadata to windows to manipulate them en mass.
 - [[./util/perwindowlayout/README.org][perwindowlayout]] :: Change the keyboard layout per window.
 - [[./util/searchengines/README.org][searchengines]] :: Allows searching text using prompt or clipboard contents with various search engines
@@ -107,9 +111,12 @@ to the world!
 - [[./modeline/wifi/README.org][wifi]] :: Display information about your wifi.
 - [[./modeline/net/README.org][net]] :: Displays information about the current network connection.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [[./modeline/acpi/README.org][acpi]] :: View the output of acpi in the modeline.
 >>>>>>> acpi
+=======
+>>>>>>> volume
 - [[./modeline/cpu/README.org][cpu]] :: Add cpu info to the modeline.
 - [[./modeline/mem/README.org][mem]] :: Display memory in the modeline, %M conflicts with maildir.
 - [[./modeline/battery-portable/README.org][battery-portable]] :: Add battery information to the modeline in a portable way.
@@ -118,6 +125,9 @@ to the world!
 ** Media
 - [[./media/amixer/README.org][amixer]] :: Manipulate the volume using amixer
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [[./fun/encouragement/README.org][encouragement]] :: Scientifically-proven optimal words of hackerish encouragement.
 =======
 >>>>>>> acpi
+=======
+>>>>>>> volume
