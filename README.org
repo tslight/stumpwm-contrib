@@ -81,11 +81,14 @@ to the world!
 - [[./util/notify/README.org][notify]] :: DBus-based notification server part
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [[./util/volume/README.org][volume]] :: Display volume changes as a message.
 >>>>>>> volume
 =======
 >>>>>>> sensors
+=======
+>>>>>>> cycle-mru
 - [[./util/windowtags/README.org][windowtags]] :: Add metadata to windows to manipulate them en mass.
 - [[./util/perwindowlayout/README.org][perwindowlayout]] :: Change the keyboard layout per window.
 - [[./util/searchengines/README.org][searchengines]] :: Allows searching text using prompt or clipboard contents with various search engines
@@ -104,6 +107,10 @@ to the world!
 - [[./util/alert-me/README.org][alert-me]] :: Alert me that an event is coming
 - [[./util/numpad-layouts/README.org][numpad-layouts]] :: A module for handling different keyboards numpad layouts
 - [[./util/undocumented/README.org][undocumented]] :: Look for stuff that should probably be in the manual that isn't
+<<<<<<< HEAD
+=======
+- [[./util/cycle-mru/README.org][cycle-mru]] :: Cycle windows in most recently used order.
+>>>>>>> cycle-mru
 - [[./util/desktop-entry/README.org][desktop-entry]] :: desktop-entry
 ** Minor Modes
 - [[./minor-mode/mpd/README.org][mpd]] :: Displays information about the music player daemon (MPD).
@@ -113,6 +120,7 @@ to the world!
 - [[./modeline/hostname/README.org][hostname]] :: Put hostname in the StumpWM modeline
 - [[./modeline/wifi/README.org][wifi]] :: Display information about your wifi.
 - [[./modeline/net/README.org][net]] :: Displays information about the current network connection.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -126,12 +134,16 @@ to the world!
 - [[./modeline/cpu/README.org][cpu]] :: Add cpu info to the modeline.
 - [[./modeline/sensors/README.org][sensors]] :: View CPU temperature and fan RPM in modeline
 >>>>>>> sensors
+=======
+- [[./modeline/cpu/README.org][cpu]] :: Add cpu info to the modeline.
+>>>>>>> cycle-mru
 - [[./modeline/mem/README.org][mem]] :: Display memory in the modeline, %M conflicts with maildir.
 - [[./modeline/battery-portable/README.org][battery-portable]] :: Add battery information to the modeline in a portable way.
 - [[./modeline/stumptray/README.org][stumptray]] :: System Tray for stumpwm.
 - [[./modeline/maildir/README.org][maildir]] :: Display maildir information in the modeline (%M conflicts with mem).
 ** Media
 - [[./media/amixer/README.org][amixer]] :: Manipulate the volume using amixer
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -142,3 +154,5 @@ to the world!
 >>>>>>> volume
 =======
 >>>>>>> sensors
+=======
+>>>>>>> cycle-mru
