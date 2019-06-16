@@ -78,6 +78,7 @@ to the world!
 - [[./util/swm-gaps/README.org][swm-gaps]] :: Pretty (useless) gaps for StumpWM
 - [[./util/app-menu/README.org][app-menu]] :: A simple application menu for launching shell commands
 - [[./util/globalwindows/README.org][globalwindows]] :: Manipulate all windows in the current X session
+<<<<<<< HEAD
 - [[./util/notify/README.org][notify]] :: DBus-based notification server part
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -89,6 +90,10 @@ to the world!
 >>>>>>> sensors
 =======
 >>>>>>> cycle-mru
+=======
+- [[./util/xdgmenu/README.org][xdgmenu]] :: Generate menus using freedesktop.org .desktop files.
+- [[./util/notify/README.org][notify]] :: DBus-based notification server part
+>>>>>>> xdgmenu
 - [[./util/windowtags/README.org][windowtags]] :: Add metadata to windows to manipulate them en mass.
 - [[./util/perwindowlayout/README.org][perwindowlayout]] :: Change the keyboard layout per window.
 - [[./util/searchengines/README.org][searchengines]] :: Allows searching text using prompt or clipboard contents with various search engines
@@ -108,9 +113,12 @@ to the world!
 - [[./util/numpad-layouts/README.org][numpad-layouts]] :: A module for handling different keyboards numpad layouts
 - [[./util/undocumented/README.org][undocumented]] :: Look for stuff that should probably be in the manual that isn't
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [[./util/cycle-mru/README.org][cycle-mru]] :: Cycle windows in most recently used order.
 >>>>>>> cycle-mru
+=======
+>>>>>>> xdgmenu
 - [[./util/desktop-entry/README.org][desktop-entry]] :: desktop-entry
 ** Minor Modes
 - [[./minor-mode/mpd/README.org][mpd]] :: Displays information about the music player daemon (MPD).
@@ -120,6 +128,7 @@ to the world!
 - [[./modeline/hostname/README.org][hostname]] :: Put hostname in the StumpWM modeline
 - [[./modeline/wifi/README.org][wifi]] :: Display information about your wifi.
 - [[./modeline/net/README.org][net]] :: Displays information about the current network connection.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -137,12 +146,16 @@ to the world!
 =======
 - [[./modeline/cpu/README.org][cpu]] :: Add cpu info to the modeline.
 >>>>>>> cycle-mru
+=======
+- [[./modeline/cpu/README.org][cpu]] :: Add cpu info to the modeline.
+>>>>>>> xdgmenu
 - [[./modeline/mem/README.org][mem]] :: Display memory in the modeline, %M conflicts with maildir.
 - [[./modeline/battery-portable/README.org][battery-portable]] :: Add battery information to the modeline in a portable way.
 - [[./modeline/stumptray/README.org][stumptray]] :: System Tray for stumpwm.
 - [[./modeline/maildir/README.org][maildir]] :: Display maildir information in the modeline (%M conflicts with mem).
 ** Media
 - [[./media/amixer/README.org][amixer]] :: Manipulate the volume using amixer
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -156,3 +169,5 @@ to the world!
 >>>>>>> sensors
 =======
 >>>>>>> cycle-mru
+=======
+>>>>>>> xdgmenu
