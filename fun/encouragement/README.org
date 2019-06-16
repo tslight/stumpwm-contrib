@@ -8,15 +8,21 @@ Strings lifted from [[https://github.com/kovisoft/slimv/blob/master/slime/slime.
 
 ** USAGE
 
-Run ~stump-encouragement~ from the StumpWM prompt to get an encouraging
-message. Or better yet - bind it to a key :-)
+Fire this sucker up with:
+
+#+BEGIN_SRC common-lisp
+(load-module "encouragement")
+#+END_SRC
+
+Then, run ~stump-encouragement~ from the StumpWM prompt to get an encouraging
+message. Or better yet - bind it to a key.
 
 #+BEGIN_SRC common-lisp
 (define-key *root-map* (kbd "E") "stump-encouragement")
 #+END_SRC
 
-Add the snippet below to your ~.stumpwmrc~ to get encouraged every time you
-start StumpWM.
+I recommend adding the snippet below to your ~.stumpwmrc~ to get encouraged
+every time you start StumpWM :-)
 
 #+BEGIN_SRC common-lisp
   (setf *startup-message* (concat
