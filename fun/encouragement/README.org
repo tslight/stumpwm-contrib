@@ -2,19 +2,26 @@
 
 /Scientifically-proven optimal words of hackerish encouragement./
 
-Inspired my the messages printed when starting Emacs' slime mode.
+Inspired by the messages printed when starting Emacs' slime mode.
 
-Strings lifted from [[https://github.com/kovisoft/slimv/blob/master/slime/slime.el][here]] and [[https://github.com/kovisoft/slimv/blob/master/slime/slime.el][here]].
+Strings lifted from [[https://github.com/kovisoft/slimv/blob/master/slime/slime.el][here]].
 
 ** USAGE
 
-Run ~stump-encouragement~ from the stump colon prompt to get an encouraging
-message.
+Run ~stump-encouragement~ from the StumpWM prompt to get an encouraging
+message. Or better yet - bind it to a key :-)
+
+#+BEGIN_SRC common-lisp
+(define-key *root-map* (kbd "E") "stump-encouragement")
+#+END_SRC
+
+Add the snippet below to your ~.stumpwmrc~ to get encouraged every time you
+start StumpWM.
 
 #+BEGIN_SRC common-lisp
   (setf *startup-message* (concat
                            "^B^5Welcome to StumpWM~%^n"
-                           (random-encouragement)))
+                           (encouragement:random-encouragement)))
 #+END_SRC
 
 Exposes ~*words-of-encouragement*~ as a list that you can add your own
