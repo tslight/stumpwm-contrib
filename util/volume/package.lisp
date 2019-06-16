@@ -1,4 +1,5 @@
 ;;;; package.lisp
 
 (defpackage #:volume
-  (:use #:cl #:stumpwm))
+  (:use #:cl #:stumpwm)
+  (:export #:volume))
