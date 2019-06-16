@@ -107,7 +107,6 @@ to the world!
 - [[./modeline/hostname/README.org][hostname]] :: Put hostname in the StumpWM modeline
 - [[./modeline/wifi/README.org][wifi]] :: Display information about your wifi.
 - [[./modeline/net/README.org][net]] :: Displays information about the current network connection.
-- [[./modeline/acpi/README.org][acpi]] :: View the output of acpi in the modeline.
 - [[./modeline/cpu/README.org][cpu]] :: Add cpu info to the modeline.
 - [[./modeline/mem/README.org][mem]] :: Display memory in the modeline, %M conflicts with maildir.
 - [[./modeline/battery-portable/README.org][battery-portable]] :: Add battery information to the modeline in a portable way.
