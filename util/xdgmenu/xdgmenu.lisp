@@ -2,6 +2,18 @@
 
 (in-package #:xdgmenu)
 
+(defvar *applications-directories*
+  (list (pathname (concat
+		   (getenv "HOME")
+		   "/.local/share/flatpak/exports/share/applications/"))
+	(pathname (concat (getenv "HOME") "/.local/share/applications/"))
+	#P"/var/lib/flatpak/exports/share/applications/"
+	#P"/var/lib/snapd/desktop/applications/"
+	#P"/usr/local/share/applications/"
+	#P"/usr/share/applications/")
+  "uiop:xdg-data-pathnames or getenv doesn't always seem to catch all of my
+   environment's XDG data directories. Add them manually instead.")
+
 (defvar *main-categories*
   (list "AudioVideo"
 	"Audio"
@@ -24,11 +36,8 @@
 
 (defun desktop-files ()
   "Get all the dot desktop files in all XDG applications directories."
-  (mapcan (lambda (d)
-	    (directory
-	     (uiop:merge-pathnames*
-	      "applications/*.desktop" d)))
-	  (uiop:xdg-data-pathnames)))
+  (mapcan (lambda (d) (directory (uiop:merge-pathnames* "*.desktop" d)))
+	  *applications-directories*))
 
 (defun remove-keys (exec file)
   "Some KDE apps have this -caption %c in a few variations. %c is The
@@ -84,11 +93,11 @@
 
 ;; not using this just an idea to make my own way of parsing .desktop files
 ;; instead of relying on regex...
-(defun load-desktop-file (file)
-  (remove nil (mapcar (lambda (l)
-			(if (match-all-regexps "=" l)
-			    (split-string l "=")))
-		      (uiop:read-file-lines file))))
+;; (defun load-desktop-file (file)
+;;   (remove nil (mapcar (lambda (l)
+;;			(if (match-all-regexps "=" l)
+;;			    (split-string l "=")))
+;;		      (uiop:read-file-lines file))))
 
 (defun parse-desktop-file (file)
   (let ((contents (uiop:read-file-string (pathname file))))
