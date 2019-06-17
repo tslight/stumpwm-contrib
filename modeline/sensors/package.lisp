@@ -9,4 +9,5 @@
 	   #:*red-above-rpm*
 	   #:*yellow-above-rpm*
 	   #:*display-above-rpm*
-	   #:*ignore-below*))
+	   #:*ignore-below*
+	   #:sensors))
