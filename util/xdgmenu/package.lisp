@@ -2,4 +2,5 @@
 
 (defpackage #:xdgmenu
   (:use #:cl #:stumpwm #:cl-ppcre)
-  (:export #:*main-categories*))
+  (:export #:*main-categories*
+	   #:xdgmenu))
