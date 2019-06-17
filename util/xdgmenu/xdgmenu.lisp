@@ -91,14 +91,6 @@
 		 (> (length only) 0)))
 	t)))
 
-;; not using this just an idea to make my own way of parsing .desktop files
-;; instead of relying on regex...
-;; (defun load-desktop-file (file)
-;;   (remove nil (mapcar (lambda (l)
-;;			(if (match-all-regexps "=" l)
-;;			    (split-string l "=")))
-;;		      (uiop:read-file-lines file))))
-
 (defun parse-desktop-file (file)
   (let ((contents (uiop:read-file-string (pathname file))))
     (if (do-show contents)
