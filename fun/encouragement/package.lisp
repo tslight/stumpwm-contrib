@@ -3,4 +3,5 @@
 (defpackage #:encouragement
   (:use #:cl #:stumpwm)
   (:export #:*words-of-encouragement*
-	   #:random-encouragement))
+	   #:random-encouragement
+	   #:encouragement))
