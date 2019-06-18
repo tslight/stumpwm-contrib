@@ -51,7 +51,7 @@
    Remove any remaining keys and trailing options from the command."
   (let* ((c (ppcre:regex-replace-all " -caption.*\%c(\'|\"|)" exec ""))
 	 (k (ppcre:regex-replace-all "(\"|\'|)\%k(\"|\'|)" c file)))
-    (first (split-string k " %"))))
+    (first (split-string k "%"))))
 
 (defun terminalp (cmd contents)
   "If the Terminal attribute is set to true append a terminal emulater to the
