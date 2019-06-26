@@ -18,17 +18,22 @@
   "Percentage at which the acpi information disappears from the modeline.")
 
 (defun acpi ()
+  "Return the percentages returned from the acpi command as a concatenated string"
   (let* ((bat (run-shell-command "acpi" t))
-	 (bat (ppcre:scan-to-strings "[0-9]+%" bat))
-	 (int (parse-integer bat :junk-allowed t)))
-    (cond ((and (> *disappear* int) (<= *green* int)) bat)
-	  ((and (> *green* int) (<= *yellow* int)) (concat "^2*" bat))
-	  ((and (> *yellow* int) (<= *red* int)) (concat "^3*" bat))
-	  ((and (> *red* int)) (concat "^1*" bat))
-	  (t ""))))
+	 (bats (ppcre:all-matches-as-strings "[0-9]+%" bat))
+	 (ints (mapcar (lambda (b) (parse-integer b :junk-allowed t)) bats)))
+    (format nil "~{~A~}"
+	    (mapcar (lambda (int bat)
+		      (cond
+			((and (> *disappear* int) (<= *green* int)) bat)
+			((and (> *green* int) (<= *yellow* int)) (concat "^2*" bat))
+			((and (> *yellow* int) (<= *red* int)) (concat "^3*" bat))
+			((and (> *red* int)) (concat "^1*" bat))
+			(t "")))
+		    ints bats))))
 
 (defcommand acpi-message () ()
-  (let ((bat (battery)))
+  (let ((bat (acpi)))
     (if (string= bat "")
 	(message "Charged")
 	(message bat))))
